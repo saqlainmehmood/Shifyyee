@@ -520,22 +520,62 @@ a {
   font-size: 3rem;
 }
 
-.collapsible__chevron{
-transform: rotate(90deg);
-transition: transform 0.3s;
+.collapsible__chevron {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
 }
 
-.collapsible__content{
+.collapsible__content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
 }
 
-.collapsible--expanded .collapsible__chevron{
+.collapsible--expanded .collapsible__chevron {
   transform: rotate(0);
 }
-.collapsible--expanded .collapsible__content{
+.collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
 }
+
+/* Blocks */
+
+.container { 
+  max-width: 924px;
+  margin: 0 auto;
+}
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block__dark {
+  background: black;
+  color: gray;
+}
+
+.block__dark .block__heading {
+  color: white;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
