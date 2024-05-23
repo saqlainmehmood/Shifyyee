@@ -13,76 +13,75 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <section class="block block__dark block--skewed-right block-showcase">
-      <header class="block__header">
-        <h2 class="block__heading">User Friendly Control Panel</h2>
-      </header>
-      <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
-          <source
-            type="images/webp"
-            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
-          />
-          <source
-            type="images/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
-          />
-          <img src="/images/ipad.png" alt="" />
-        </picture>
-        <ul class="list">
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="/images/sprite.svg#snap"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start and Manage Update</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda nostrum amet debitis dolorem. Odit itaque fuga quia
-                  unde! Sunt, asperiores.
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li>    <div class="media">
-            <div class="media__image">
-              <svg class="icon icon--primary">
-                <use xlink:href="/images/sprite.svg#growth"></use>
-              </svg>
-            </div>
-            <div class="media__body">
-              <h3 class="media__title">Stagin, GIT & WP-CLI</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda nostrum amet debitis dolorem. Odit itaque fuga quia
-                unde! Sunt, asperiores.
-              </p>
-            </div>
+    <footer class="block block__dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">PRODUCTS</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="/images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Website Hosting</a></li>
+              <li><a href="#">Free Automated</a></li>
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Migration</a></li>
+            </ul>
           </div>
-        </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="/images/sprite.svg#wordpress"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda nostrum amet debitis dolorem. Odit itaque fuga quia
-                  unde! Sunt, asperiores.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">COMPANY</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="/images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">SUPPORT</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="/images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">DOMAINS</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="/images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Domain Checker</a></li>
+              <li><a href="#">Domain Transfer</a></li>
+              <li><a href="#">Free Domain</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img src="/images/logo.svg" alt="" />
+          <p class="footer__copyright">Copyright 2024 Mosh Hamedani</p>
+        </section>
       </div>
-    </section>
+    </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
